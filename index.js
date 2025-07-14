@@ -10,6 +10,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api/auth', require('./routes/authRoutes'));
+app.use('/api/menu', require('./routes/menuRoutes'));
 
 // DB + Server start
 mongoose.connect(process.env.MONGO_URI)
